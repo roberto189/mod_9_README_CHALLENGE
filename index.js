@@ -36,12 +36,12 @@ const licenses = new Map([
 const questions = [
     {
         type: "input",
-        message: "What is the title of your project?",
+        message: "input project title",
         name: "Title"
     },
     {
         type: "input",
-        message: "What is your project about?",
+        message: "input description of the project?",
         name: "Description",
     
     },
@@ -59,39 +59,33 @@ const questions = [
     },
     {
         type: "list",
-        message: "Please choose a license",
+        message: "Choose a license",
         name: "License",
         choices: Array.from(licenses.keys()),
       
     },
     {
         type: "input",
-        message: "Is there anyone you want to give a shout out to for helping you?",
-        name: "ShoutOuts",
-    
-    },
-    {
-        type: "input",
-        message: "Please explain how users may test your application",
+        message: "Input how users may test your application",
         name: "Test",
         default: "npm run test",
       
     },
     {
         type: "input",
-        message: "Please list instructions for those who wish to contact you",
+        message: "List instructions for those who wish to contact you",
         name: "Questions",
       
     },
     {
         type: "input",
-        message: "What is your GitHub username?",
+        message: "Input GitHub username",
         name: "Username",
       
     },
     {
         type: "input",
-        message: "What is your Email address?",
+        message: "Input Email address",
         name: "Email",
       
     },
